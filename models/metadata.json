@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "created_utc": "2026-10-29T18:02:54+00:00",
+  "created_utc": "2026-10-30T18:01:06+00:00",
   "selected_model": "Random Forest",
   "threshold": 0.5,
   "label_names": {
@@ -264,13 +264,13 @@
     "label"
   ],
   "sklearn_version": "1.8.0",
-  "python_version": "3.12.3",
+  "python_version": "3.12.4",
   "numpy_version": "2.4.4",
   "pandas_version": "3.0.2",
   "seed": 42,
   "test_size": 0.2,
   "artifacts": {
-    "nids_pipeline.joblib": "972efed3457bfbd7553441b548ec985b68df875111ed8ff8c6247518b9d5e89b",
-    "random_forest_pipeline.joblib": "972efed3457bfbd7553441b548ec985b68df875111ed8ff8c6247518b9d5e89b"
+    "nids_pipeline.joblib": "428711abd38e898bb117907bed255f2bb9a8944ccc8d13a7f1a47981663cfeba",
+    "random_forest_pipeline.joblib": "428711abd38e898bb117907bed255f2bb9a8944ccc8d13a7f1a47981663cfeba"
   }
 }

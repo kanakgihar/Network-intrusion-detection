@@ -1,5 +1,5 @@
 {
-  "source_file": "UNSW_NB15_testing-set.csv",
+  "source_file": "UNSW_NB15_training-set.csv",
   "cleaning": {
     "rows_in": 175341,
     "missing_values_before_imputation": 0,

@@ -299,7 +299,7 @@ class TestShippedArtifacts(unittest.TestCase):
         self.assertEqual(set(imp["feature"]), set(bundle.feature_order))
 
     def test_app_has_valid_syntax(self):
-        ast.parse((ROOT / "app.py").read_text())
+        ast.parse((ROOT / "app.py").read_text(encoding="utf-8"))
 
 
 if __name__ == "__main__":
