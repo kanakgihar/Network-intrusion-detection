@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Secrets / local config
+.env
+*.key
+.streamlit/secrets.toml
+
+# Logs
+*.log
+
+# Large raw datasets stay out of Git (download them yourself - see README).
+# The tiny demo file data/sample_traffic.csv IS committed.
+data/*
+!data/sample_traffic.csv
+!data/README.md
+
+# NOTE: models/ and reports/ are intentionally committed (small, ~6 MB + ~0.5 MB)
+# so the deployed app needs neither the dataset nor retraining.

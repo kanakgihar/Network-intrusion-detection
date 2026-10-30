@@ -1,0 +1,35 @@
+{
+  "source_file": "UNSW_NB15_testing-set.csv",
+  "cleaning": {
+    "rows_in": 175341,
+    "missing_values_before_imputation": 0,
+    "dropped_null_target": 0,
+    "dropped_duplicates": 67601,
+    "rows_out": 107740
+  },
+  "records_processed": 107740,
+  "label_counts": {
+    "Malicious": 55850,
+    "Normal": 51890
+  },
+  "attack_cat_counts": {
+    "Normal": 51890,
+    "Exploits": 19844,
+    "Fuzzers": 16150,
+    "Reconnaissance": 7522,
+    "Generic": 4181,
+    "DoS": 3806,
+    "Analysis": 1594,
+    "Backdoor": 1535,
+    "Shellcode": 1091,
+    "Worms": 127
+  },
+  "n_numeric_features": 39,
+  "n_categorical_features": 3,
+  "split": {
+    "train": 86192,
+    "test": 21548,
+    "stratified_on": "attack_cat",
+    "seed": 42
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "selected_model": "Random Forest",
+  "selection_criterion": "mean 3-fold CV F1 of the malicious class on the training split",
+  "decision_threshold": 0.5,
+  "cross_validation": {
+    "Logistic Regression": {
+      "f1": 0.9159529103419479,
+      "precision": 0.8851754557070178,
+      "recall": 0.948948065632904,
+      "roc_auc": 0.9741466077926081,
+      "f1_std": 0.00012548590024625867,
+      "precision_std": 0.0004638438287584188,
+      "recall_std": 0.00031328943837488957,
+      "roc_auc_std": 0.0006402661694081515
+    },
+    "Random Forest": {
+      "f1": 0.9326414623514631,
+      "precision": 0.9092886711708354,
+      "recall": 0.9572291777612429,
+      "roc_auc": 0.9846971371921992,
+      "f1_std": 0.0011468497247395107,
+      "precision_std": 0.0023121798575549703,
+      "recall_std": 0.0004754643524964986,
+      "roc_auc_std": 0.0003940407921935196
+    }
+  },
+  "test": {
+    "Logistic Regression": {
+      "accuracy": 0.910154074624095,
+      "precision_malicious": 0.8834717607973422,
+      "recall_malicious": 0.9522829006266786,
+      "f1_malicious": 0.9165876777251185,
+      "f1_macro": 0.9096163773318342,
+      "roc_auc": 0.9738839373904546,
+      "false_positive_rate": 0.13518982462902293,
+      "false_negative_rate": 0.047717099373321394,
+      "confusion_matrix": [
+        [
+          8975,
+          1403
+        ],
+        [
+          533,
+          10637
+        ]
+      ]
+    },
+    "Random Forest": {
+      "accuracy": 0.9316873955819566,
+      "precision_malicious": 0.9133140129560178,
+      "recall_malicious": 0.959265890778872,
+      "f1_malicious": 0.9357261374552441,
+      "f1_macro": 0.9314165994793304,
+      "roc_auc": 0.9855653650989896,
+      "false_positive_rate": 0.09799576026209289,
+      "false_negative_rate": 0.04073410922112802,
+      "confusion_matrix": [
+        [
+          9361,
+          1017
+        ],
+        [
+          455,
+          10715
+        ]
+      ]
+    }
+  },
+  "classification_report_selected": {
+    "Normal": {
+      "precision": 0.9536471067644662,
+      "recall": 0.9020042397379071,
+      "f1-score": 0.9271070615034168,
+      "support": 10378.0
+    },
+    "Malicious": {
+      "precision": 0.9133140129560178,
+      "recall": 0.959265890778872,
+      "f1-score": 0.9357261374552441,
+      "support": 11170.0
+    },
+    "accuracy": 0.9316873955819566,
+    "macro avg": {
+      "precision": 0.933480559860242,
+      "recall": 0.9306350652583896,
+      "f1-score": 0.9314165994793304,
+      "support": 21548.0
+    },
+    "weighted avg": {
+      "precision": 0.9327393353777774,
+      "recall": 0.9316873955819566,
+      "f1-score": 0.9315749971996258,
+      "support": 21548.0
+    }
+  },
+  "per_attack_category": [
+    {
+      "attack_cat": "Normal",
+      "test_records": 10378,
+      "correctly_classified": 9361,
+      "rate": 0.9020042397379071,
+      "metric": "specificity (true-negative rate)"
+    },
+    {
+      "attack_cat": "Exploits",
+      "test_records": 3969,
+      "correctly_classified": 3948,
+      "rate": 0.9947089947089947,
+      "metric": "detection rate (recall)"
+    },
+    {
+      "attack_cat": "Fuzzers",
+      "test_records": 3230,
+      "correctly_classified": 2848,
+      "rate": 0.881733746130031,
+      "metric": "detection rate (recall)"
+    },
+    {
+      "attack_cat": "Reconnaissance",
+      "test_records": 1504,
+      "correctly_classified": 1503,
+      "rate": 0.9993351063829787,
+      "metric": "detection rate (recall)"
+    },
+    {
+      "attack_cat": "Generic",
+      "test_records": 836,
+      "correctly_classified": 833,
+      "rate": 0.9964114832535885,
+      "metric": "detection rate (recall)"
+    },
+    {
+      "attack_cat": "DoS",
+      "test_records": 761,
+      "correctly_classified": 758,
+      "rate": 0.9960578186596584,
+      "metric": "detection rate (recall)"
+    },
+    {
+      "attack_cat": "Analysis",
+      "test_records": 319,
+      "correctly_classified": 275,
+      "rate": 0.8620689655172413,
+      "metric": "detection rate (recall)"
+    },
+    {
+      "attack_cat": "Backdoor",
+      "test_records": 307,
+      "correctly_classified": 307,
+      "rate": 1.0,
+      "metric": "detection rate (recall)"
+    },
+    {
+      "attack_cat": "Shellcode",
+      "test_records": 218,
+      "correctly_classified": 217,
+      "rate": 0.9954128440366973,
+      "metric": "detection rate (recall)"
+    },
+    {
+      "attack_cat": "Worms",
+      "test_records": 26,
+      "correctly_classified": 26,
+      "rate": 1.0,
+      "metric": "detection rate (recall)"
+    }
+  ],
+  "train_rows": 86192,
+  "test_rows": 21548,
+  "fast_mode": false
+}
